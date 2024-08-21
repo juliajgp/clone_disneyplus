@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.footer {
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__logo {
+        width: 80px;
+        margin: 0 auto 10px;
+    }
+
+    &__links {
+        margin-bottom: 16px;
+
+        &__item {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+
+                &:hover {
+                    color: variaveis.$corTextoSecundario;
+                }
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}
